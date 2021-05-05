@@ -1,0 +1,5 @@
+[package]
+description = A Zeek package which detects ICMP ping tunnels created by the Pingback tool
+tags = C2, ICMP, RAT, Windows, Malware
+version = 0.1
+script_dir = scripts

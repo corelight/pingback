@@ -1,22 +1,3 @@
-# Pingback
-
-A Zeek package which detects ICMP ping tunnels created by the Pingback tool.
-
-## Installation
-
-The easiest way to install this package is through [zkg](https://docs.zeek.org/projects/package-manager/en/stable/zkg.html):
-
-```zkg install corelight/pingpack```
-
-## Additional References
-
-- https://www.bleepingcomputer.com/news/security/new-windows-pingback-malware-uses-icmp-for-covert-communication/
-- https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/backdoor-at-the-end-of-the-icmp-tunnel/
-- https://github.com/SpiderLabs/pingback
-- https://www.virustotal.com/gui/file/e50943d9f361830502dcfdb00971cbee76877aa73665245427d817047523667f/detection
-
-## License
-
 Copyright (c) 2021, Corelight, Inc. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
