@@ -1,2 +1,0 @@
-# TODO update Corelight blog reference
-alert icmp any any -> any any (msg:"An ICMP message contains 'Pingback' C2 commands"; icode:0; pcre:"/^upload|^download|^exep|^shell|^rexec/"; reference:url,www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/backdoor-at-the-end-of-the-icmp-tunnel/; reference:url,corelight.blog/category/corelight-labs/ ;classtype:trojan-activity; sid:9999; rev:1; metadata:created_at 2021_05_05, updated_at 2021_05_05;)
