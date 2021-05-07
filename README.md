@@ -1,12 +1,12 @@
-# Pingback
+# Pingback C2 Detection
 
-A Zeek package which detects ICMP ping tunnels created by the Pingback tool.
+A Zeek package and Suricata rules for detection of ICMP ping tunnels created by the Pingback C2 tool.
 
 ## Installation
 
 The easiest way to install this package is through [zkg](https://docs.zeek.org/projects/package-manager/en/stable/zkg.html):
 
-```zkg install corelight/pingpack```
+```zkg install corelight/pingback```
 
 ## Additional References
 
