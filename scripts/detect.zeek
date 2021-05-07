@@ -41,7 +41,7 @@ export {
                 $conn=c,
                 #$identifier=cat(c$id$orig_h),
                 $msg=fmt("An ICMP ping request message may have been Pingback C2 ref:trustwave.com/en-us/resources/blogs/spiderlabs-blog/backdoor-at-the-end-of-the-icmp-tunnel/" ),
-                $sub=fmt("seq=%s , |payload|=%s , icmp_conn=%s , first 20 bytes of ICMP payload=%s",seq,|payload|,info,sub_bytes(payload,0,20)))]);
+                $sub=fmt("seq=%s , |payload|=%s , icmp_info=%s , first 20 bytes of ICMP payload=%s",seq,|payload|,info,sub_bytes(payload,0,20))]);
         }
     }
     event icmp_echo_reply(c: connection, info: icmp_conn, id: count, seq: count, payload: string) {
@@ -51,7 +51,7 @@ export {
                 $conn=c,
                 #$identifier=cat(c$id$resp_h),
                 $msg=fmt("An ICMP ping reply message may have been Pingback C2 ref:trustwave.com/en-us/resources/blogs/spiderlabs-blog/backdoor-at-the-end-of-the-icmp-tunnel/"),
-                $sub=fmt("seq=%s , |payload|=%s , icmp_conn=%s , first 20 bytes of ICMP payload=%s",seq,|payload|,info,sub_bytes(payload,0,20)))]);
+                $sub=fmt("seq=%s , |payload|=%s , icmp_info=%s , first 20 bytes of ICMP payload=%s",seq,|payload|,info,sub_bytes(payload,0,20))]);
         }
     }
 @endif
