@@ -1,6 +1,7 @@
 # Pingback C2 Detection
 
-A Zeek package and Suricata rules for detection of ICMP ping tunnels created by the Pingback C2 tool.
+A Zeek package and Suricata rules for detection of ICMP ping tunnels created by the Pingback C2 tool.  
+Accompanying blog post: https://corelight.blog/2021/05/07/pingback-icmp-tunneling-malware/  
 
 ## Installation
 
