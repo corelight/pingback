@@ -5,7 +5,10 @@ export {
   global commands: pattern = /^upload|^download|^exep|^shell|^rexec/;
   global message_types: set[count] = {53764, 54020, 54276}; 
 
-  redef enum Notice::Type += { Pingback_Tunnel }; 
+  redef enum Notice::Type += {
+    ## Detects Pingback ICMP tunneling.
+    Pingback_Tunnel
+  };
 }
 
 # 'any' is used here for info because this could be an icmp_info or icmp_conn
